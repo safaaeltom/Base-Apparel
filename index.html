@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="wrapper">
+        <div class="content">
+            <img src="images/bg-pattern-desktop.svg" alt="background pattern" class="bg-pattern-desktop">
+            <img src="images/logo.svg" alt="Base Apparel Logo">
+            <h1>WE'RE COMING SOON</h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form id="email-form">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <img src="images/icon-arrow.svg" alt="Arrow icon" class="arrow-icon">
+                <button type="submit">Notify Me</button>
+                <p class="error-message">Please provide a valid email address</p>
+                <img src="images/icon-error.svg" alt="Error icon" class="error-icon">
+            </form>
+        </div>
+
+        <div class="image">
+            <picture>
+            <source srcset="images/hero-mobile.jpg" media="(max-width: 768px)">
+            <img src="images/hero-desktop.jpg" alt="Hero image">
+            </picture>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
