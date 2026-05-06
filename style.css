@@ -56,6 +56,26 @@
     flex: 2;
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .content {
+        padding: 30px 40px;
+    }
+    .content img {
+        width: 100px;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+    }
+    .content p {
+        font-size: 0.7rem;
+        line-height: 1.4;
+    }
+}
+
 .error-message, 
 .error-icon {
     display: none;
