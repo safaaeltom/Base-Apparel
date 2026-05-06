@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 50px 190px;
     height: 100%;
     flex: 3;
 
@@ -25,6 +26,26 @@
 .content img {
     width: 150px;
     height: auto;
+}
+
+.content h1 {
+    font-family: josefin sans, sans-serif;
+    letter-spacing: 20px;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+.highlight {
+    color: hsl(0, 36%, 70%);
+}
+
+.content p {
+    color: hsl(0, 36%, 70%);
+    font-family: josefin sans, sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .image img {
