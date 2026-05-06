@@ -3,19 +3,23 @@
     outline: 1px solid red;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .wrapper {
     display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
 .content {
     background-image: url('images/bg-pattern-desktop.svg');
-    
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    height: 100vh;
+    justify-content: space-between;
+    height: 100%;
+    flex: 3;
+
 }
 
 .content img {
@@ -23,15 +27,12 @@
     height: auto;
 }
 
-.image {
-    height: 100vh;
-}
-
 .image img {
     height: 100%;
     width: 100%;
     object-fit: contain;
     display: block;
+    flex: 2;
 }
 
 .error-message, 
