@@ -1,10 +1,10 @@
 * {
-    margin: 0;
     outline: 1px solid red;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .wrapper {
@@ -17,19 +17,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 190px;
+    padding: 50px 80px;
     height: 100%;
     flex: 3;
-
+    
 }
 
-.content img {
+.logo {
     width: 150px;
     height: auto;
 }
 
+.hero-mobile {
+    display: none;
+}
+
 .content h1 {
-    font-family: josefin sans, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     letter-spacing: 20px;
     font-weight: 200;
     font-size: 5rem;
@@ -41,34 +45,59 @@
 
 .content p {
     color: hsl(0, 36%, 70%);
-    font-family: josefin sans, sans-serif;
-    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+    letter-spacing: 0.9px;
     line-height: 1.4;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-.image img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    display: block;
+.hero-desktop {
     flex: 2;
 }
 
-@media screen and (max-width: 768px) {
+.hero-desktop img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    
+}
+
+@media (max-width: 768px) {
     .wrapper {
         flex-direction: column;
+        height: auto;
     }
+
+    .hero-desktop {
+        display: none;
+    }
+
     .content {
         padding: 30px 40px;
+        gap: 30px;
     }
-    .content img {
+
+    .logo {
         width: 100px;
+        height: auto;
     }
+
+    .hero-mobile {
+        display: block;
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+    .hero-mobile img {
+        width: 100%;
+    }
+
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         letter-spacing: 10px;
+        
     }
     .content p {
         font-size: 0.7rem;
