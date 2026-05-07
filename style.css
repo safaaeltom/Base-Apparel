@@ -93,6 +93,7 @@
 
 .email-form input {
     border: none;
+    outline: none;
     padding: 5px 30px;
     font-size: 1rem;
 }
@@ -165,8 +166,12 @@
         font-size: 0.9rem;
         padding-left: 15px;
     }
+    .email-form input {
+    border: none;
+    font-size: 0.8rem;
+}
     .email-form button {
-        padding: 9px 25px;
+        padding: 11px 25px;
     }
 
 }
