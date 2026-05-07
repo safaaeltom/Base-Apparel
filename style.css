@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items:center;
     border-radius: 35px;
-    outline: 3px solid hsl(0, 24%, 89%);
+    outline: 2px solid hsl(0, 24%, 89%);
     margin-bottom: 20px;
 
 }
@@ -91,7 +91,11 @@
 .email-form button {
     padding: 15px 45px;
     border-radius:35px;
-    color: hsl(0, 93%, 68%);
+    background: linear-gradient(135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+    box-shadow: 0 10px 40px hsl(0, 74%, 74%);
 }
 
 @media (max-width: 768px) {
@@ -128,6 +132,7 @@
         letter-spacing: 9px;
         line-height: 1.2;
         margin-bottom: 10px;
+        text-align: center;
     }
     .boldness {
         font-weight: 600;
@@ -136,9 +141,7 @@
         font-size: 0.8rem;
         line-height: 1.7;
         margin-bottom: 20px;
-    }
-    .email-form {
-        outline: 2px solid hsl(0, 24%, 89%);
+        text-align: center;
     }
     .email-form ::placeholder {
         font-size: 0.9rem;
