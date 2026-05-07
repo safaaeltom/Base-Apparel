@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    outline: 1px solid red;
+    
 }
 
 *, *::before, *::after {
@@ -14,6 +14,9 @@
 
 .content {
     background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,14 +91,29 @@
     color:hsl(0, 24%, 89%)
 }
 
+.email-form input {
+    border: none;
+    padding: 5px 30px;
+    font-size: 1rem;
+}
+
+.email-form input:-webkit-autofill,
+.email-form input:-webkit-autofill:hover,
+.email-form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px hsl(0, 0%, 100%) inset;
+  box-shadow: 0 0 0px 1000px hsl(0, 0%, 100%) inset;
+}
+
 .email-form button {
-    padding: 15px 45px;
+    padding: 17px 45px;
     border-radius:35px;
+    border: none;
+    cursor: pointer;
     background: linear-gradient(135deg,
     hsl(0, 80%, 86%),
     hsl(0, 74%, 74%)
   );
-    box-shadow: 0 10px 40px hsl(0, 74%, 74%);
+    box-shadow: 0 10px 40px hsl(0, 33%, 72%);
 }
 
 @media (max-width: 768px) {
