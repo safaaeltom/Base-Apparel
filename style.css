@@ -1,10 +1,11 @@
 * {
+    margin: 0;
+    padding: 0;
     outline: 1px solid red;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
 }
 
 .wrapper {
@@ -17,9 +18,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 80px;
+    padding: 50px 150px;
     height: 100%;
-    flex: 3;
+    flex: 0 0 58%;
     
 }
 
@@ -36,7 +37,7 @@
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 20px;
     font-weight: 200;
-    font-size: 5rem;
+    font-size: 5.5rem;
 }
 
 .highlight {
@@ -49,19 +50,17 @@
     letter-spacing: 0.9px;
     line-height: 1.4;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .hero-desktop {
-    flex: 2;
+    flex: 0 0 42%;
 }
 
 .hero-desktop img{
     height: 100%;
     width: 100%;
     display: block;
-    object-fit: cover;
-    
 }
 
 @media (max-width: 768px) {
